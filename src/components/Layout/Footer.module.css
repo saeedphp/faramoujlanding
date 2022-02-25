@@ -1,0 +1,47 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    background: #1c1c1c;
+    padding: 1rem 0;
+}
+
+.footer ul{
+    margin: 0;
+}
+
+.footer ul li{
+    display: inline-block;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.footer ul li i{
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1000ff;
+    color: white;
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0 5px 10px #ccc;
+    padding: 1rem;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 0;
+    z-index: 11;
+}
+
+.back-to-top i{
+    position: absolute;
+    top: 9px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}

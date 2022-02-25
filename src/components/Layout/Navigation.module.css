@@ -1,0 +1,66 @@
+.nav{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li{
+    display: inline-block;
+}
+
+.nav ul li a{
+    color: #fff;
+    font-size: 1rem;
+    margin: 0 1rem;
+    position: relative;
+    text-align: center;
+    display: block;
+    padding: 1rem 0;
+}
+
+.nav li a::before{
+    position: absolute;
+    height: 5px;
+    width: 0%;
+    bottom: -3px;
+    right: 0;
+    background: #00c3ff;
+    content: "";
+    display: block;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.nav li a::after{
+    position: absolute;
+    height: 5px;
+    width: 0%;
+    bottom: -3px;
+    left: 0;
+    background: #00c3ff;
+    content: "";
+    display: block;
+
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.nav li:hover a::before{
+    left: 50%;
+    width: 50%;
+    right: auto;
+}
+
+.nav li:hover a::after{
+    left: auto;
+    right: 50%;
+    width: 50%;
+}

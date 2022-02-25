@@ -1,0 +1,23 @@
+.portfolio{
+    width: 100%;
+    height: fit-content;
+    padding-top: 8rem;
+}
+
+.portfolio-title{
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.portfolio-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+

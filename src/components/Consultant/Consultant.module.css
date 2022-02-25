@@ -1,0 +1,27 @@
+.consultant{
+    width: 100%;
+    margin: 5rem 0;
+}
+
+.consultant-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.consultant-wrap img{
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .consultant-wrap{
+        padding: 2rem;
+        width: 80%;
+    }
+}
+

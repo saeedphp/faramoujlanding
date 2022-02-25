@@ -1,0 +1,79 @@
+@font-face {
+    font-family: IRANSans;
+    font-display: swap;
+    src: url(assets/font/eot/PinkSans.eot?#iefix) format('embedded-opentype'),
+    url(assets/font/ttf/PinkSans.ttf) format('truetype'),
+    url(assets/font/woff/PinkSans.woff) format('woff'),
+    url(assets/font/woff2/PinkSans.woff2) format('woff2');
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  background: #000;
+    direction: rtl;
+    text-align: right;
+    overflow-x: hidden;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    backdrop-filter: blur(20px) saturate(180%);
+    background: rgba(0,0,0,.7);
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a,p,span,button,input,h1,h2,h3,h4,h5,h6{
+    font-family: IRANSans;
+}
+
+.txtCenter{
+    text-align: center;
+}
+
+.col-2 {
+    width: 20%;
+}
+
+.col-8 {
+    width: 60%;
+}
+
+.nav{
+    background: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    right: -100%;
+    transition: 850ms;
+    z-index: 10;
+}
+
+.overlay.active{
+    display: block;
+}
+
+.nav.active{
+    right: 0;
+    transition: .7s;
+}
