@@ -1,0 +1,25 @@
+.portfolios{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+}
+
+.portfolios .card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 4rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .portfolios .card{
+        flex-direction: column;
+        padding: 1rem;
+    }
+}

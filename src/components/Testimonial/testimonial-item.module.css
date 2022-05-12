@@ -68,6 +68,29 @@
     margin-left: 2rem;
 }
 
+.item-wrapper__voice .voiceWrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.item-wrapper__voice .voiceWrapper button{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #7a7474;
+    border-radius: 50%;
+    position: relative;
+}
+
+.item-wrapper__voice .voiceWrapper button i{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
 @media (max-width: 768px) {
     .item-wrapper{
         flex-direction: column;

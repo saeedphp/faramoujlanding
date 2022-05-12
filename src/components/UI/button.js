@@ -1,8 +1,9 @@
 import styles from './button.module.css';
 
 const Button = (props) => {
+
     return (
-        <button className={styles.btn}>
+        <button onClick={props.to} className={styles.btn}>
             {props.children}
         </button>
     )

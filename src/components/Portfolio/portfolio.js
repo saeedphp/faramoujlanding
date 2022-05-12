@@ -1,5 +1,7 @@
 import styles from './portfolio.module.css';
 import PortfolioItem from "./portfolio-item";
+import Button from "../UI/button";
+import {Link} from "react-router-dom";
 
 const Portfolio = () => {
 
@@ -14,6 +16,13 @@ const Portfolio = () => {
                     <PortfolioItem/>
                 </ul>
 
+            </div>
+            <div className={styles.controllers}>
+                <Link to="/portfolios">
+                    <Button>
+                        مشاهده بیشتر
+                    </Button>
+                </Link>
             </div>
         </section>
     )
